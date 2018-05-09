@@ -43,14 +43,14 @@ Request.deserialize = function (text) {
   return request;
 };
 
-// let req = new Request();
-// req.method = 'HTTP/1.1';
-// req.URI = '200';
-// req.version = 'Ok';
-// req.header.Host = '127.0.0.1:9000';
-// req.body = 'Hello World!';
-//
-// console.log(req.serialize());
-// console.log(Request.deserialize(req.serialize()));
+let req = new Request();
+req.method = 'HTTP/1.1';
+req.URI = '200';
+req.version = 'Ok';
+req.header.Host = '127.0.0.1:9000';
+req.body = 'Hello World!';
+
+console.log(req.serialize());
+console.log(Request.deserialize(req.serialize()));
 
 module.exports = Request;

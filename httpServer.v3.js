@@ -31,20 +31,20 @@ httpServer.listen = function(port, host) {
 }
 
 // -------------------- example --------------------
-// let testServer = httpServer.create((req, res) => {
-//   res.version = 'HTTP/1.1';
-//   res.statusCode = 200;
-//   res.reasonPhrase = 'Ok';
-//   res.header.Date = new Date();
-//   res.body = 'Hello World!';
-//
-//   res.send();
-//
-//   console.log(req);
-//   console.log('-------------');
-//   console.log(res);
-// });
-//
-// testServer.listen(9000, '127.0.0.1');
+let testServer = httpServer.create((req, res) => {
+  res.version = 'HTTP/1.1';
+  res.statusCode = 200;
+  res.reasonPhrase = 'Ok';
+  res.header.Date = new Date();
+  res.body = 'Hello World!';
+
+  res.send();
+
+  console.log(req);
+  console.log('-------------');
+  console.log(res);
+});
+
+testServer.listen(9000, '127.0.0.1');
 
 module.exports = httpServer;

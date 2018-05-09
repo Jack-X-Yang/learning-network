@@ -1,6 +1,6 @@
 const http = require('http');
 
-http.get('http://127.0.0.1:9000', (res) => {
+http.get('http://www.360.cn', (res) => {
   let { header } = res;
 
   console.log('-------------------- HEAD BEGIN --------------------');

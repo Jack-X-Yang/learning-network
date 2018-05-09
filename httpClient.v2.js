@@ -1,7 +1,7 @@
 const net = require('net');
 
-const HOST = '127.0.0.1';
-const PORT = 9000;
+const HOST = 'www.360.cn';
+const PORT = 80;
 
 let client = new net.Socket();
 
